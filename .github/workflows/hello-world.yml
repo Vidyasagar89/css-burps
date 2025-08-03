@@ -11,3 +11,7 @@ jobs:
         steps:
             - name: Echo Hello
               run: echo "Hello, GitHub Action!"
+            - name: Print the current date
+              run: date
+            - name: List files in the workspace
+              run: ls -la
