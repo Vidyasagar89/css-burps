@@ -16,4 +16,4 @@ jobs:
             - name: List files in the workspace
               run: ls -la
             - name: View Calender
-              run: date + "%B"
+              run: date%B
