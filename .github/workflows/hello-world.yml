@@ -18,4 +18,6 @@ jobs:
             - name: View Calender
               run: echo $(date +%B)
             - name: Show secret value
-              run: echo ${{ secrets.MY_SECRET_MESSAGE }}
+              run: echo $ {{ secrets.MY_SECRET_MESSAGE }}
+              # env: 
+              #   MY_SECRET_MESSAGE: $
