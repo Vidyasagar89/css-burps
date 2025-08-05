@@ -7,10 +7,10 @@ on:
 
 jobs:
     say-hello:
-        runs-on:  windows-latest
+        runs-on:  ubuntu-latest
         steps:
-            - name: Echo Hello
-              run: echo "Hello, GitHub Action!"
+            - name: Checkout repository
+              run: actions/checkout@v3
             - name: Print the current date
               run: date
             - name: List files in the workspace
