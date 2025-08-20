@@ -18,6 +18,6 @@ jobs:
             - name: View Calender
               run: echo $(date +%B)
             - name: Show secret value (safe usage)
-              run: echo "::add-mask::$MY_SECRET_MESSAGE2" && echo "Secret is configured"
+              run: echo "$MY_SECRET_MESSAGE2"
               env: 
                 MY_SECRET_MESSAGE: ${{ secrets.MY_SECRET_MESSAGE }}
