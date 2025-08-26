@@ -25,3 +25,6 @@ jobs:
               run: echo "::add-mask::$VARIABLE_A"
               env: 
                 VARIABLE_A: ${{ vars.MY_VARIABLE }}
+            - name: Notify on failures
+              if: failure()
+              run: echo "A step failed! Investigate the logs"
